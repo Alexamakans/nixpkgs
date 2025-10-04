@@ -175,8 +175,9 @@ stdenv.mkDerivation (finalAttrs: {
     libXinerama
     libXau
 
-    # for gdctl shebang
+    # for gdctl and gnome-service-client shebangs
     (python3.withPackages (pp: [
+      pp.dbus-python
       pp.pygobject3
       pp.argcomplete
     ]))
