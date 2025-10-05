@@ -38,6 +38,7 @@
   libseccomp,
   libtiff,
   libuuid,
+  libwebp,
   libxml2,
   poppler,
   systemd,
@@ -102,6 +103,7 @@ stdenv.mkDerivation (finalAttrs: {
     libpng
     libtiff
     libuuid
+    libwebp
     libxml2
     poppler
     taglib
